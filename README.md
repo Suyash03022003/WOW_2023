@@ -8,5 +8,5 @@ This repository contains ReactJS application of GDSC WOW 2023 website.
 
 1. Clone the repository
 2. Run the following commands in the terminal:
-     ### npm i
-     ### npm start
+     npm i
+     npm start
