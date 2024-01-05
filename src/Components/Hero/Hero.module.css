@@ -1,0 +1,229 @@
+.spaces {
+    height: var(--total-header-height);
+}
+
+.hero_main {
+    background-color: var(--background-light-color);
+    color: var(--text-color);
+    width: 100%;
+    /* the extra 5px is for the borderbottom to the hero section */
+    min-height: 91vh;
+    /* background-image: url("/src/assets/Hero/background.png"); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+.hero_container {
+    z-index: 10;
+    pointer-events: none;
+    position: absolute;
+    top: calc(var(--total-header-height) + 120px);
+    left: 0;
+    width: 100%;
+    height: max-content;
+
+    color: var(--text-color);
+
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainHeroContainer {
+    z-index: 1;
+    padding-top: calc(var(--total-header-height) + 120px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.mainHeroSection {
+    position: "absolute";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.floatingWoWTextContainer .floatingText {
+    cursor: default;
+    transition: none;
+    font-weight: 600;
+    color: var(--floating-text-over-bg-color);
+}
+
+.floatingWoWTextContainer .floatingText:hover {
+    color: var(--text-color);
+}
+
+.hr {
+    background-image: linear-gradient(
+        to right,
+        #db4235,
+        #ef990d,
+        #3da247,
+        #3b84d9
+    );
+    height: 5px;
+}
+
+.register {
+    pointer-events: auto;
+    cursor: pointer;
+
+    background-color: #4180ea;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 1rem;
+    color: #ffffff;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    border-radius: 0.375rem;
+}
+
+.span {
+    background-image: url(/src/assets/Hero/border.svg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 10px 0;
+}
+
+.gdsc_svg {
+    padding-bottom: 0.25rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 83.333333%;
+    height: auto;
+}
+
+.gdsc_svg path:first-child {
+    fill: var(--text-color);
+}
+
+.hero_head {
+    fill: var(--text-color);
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+}
+
+.hero_logo_svg {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    height: auto;
+}
+
+.hero_heading {
+    display: flex;
+    margin-bottom: 0.5rem;
+    fill: var(--text-color);
+    justify-content: center;
+    align-items: center;
+}
+
+.eo {
+    width: 36px;
+    padding-top: 4px;
+}
+
+@media screen and (max-width: 1500px) {
+    .hero_main {
+        min-height: 100vh;
+    }
+
+    .floatingWoWTextContainer .floatingText {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .hero_head {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    .gdsc_svg {
+        width: 66.666667%;
+    }
+
+    .hero_heading {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    .register {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+    }
+}
+
+@media (min-width: 1281px) {
+    .hero_main {
+        min-height: 90vh;
+    }
+}
+@media (min-width: 1024px) {
+    .gdsc_svg {
+        width: 33.333333%;
+    }
+
+    .hero_container {
+        display: block;
+        top: calc(var(--total-header-height) + 120px);
+    }
+
+    .mainHeroSection {
+        top: 50%;
+    }
+}
+
+@media screen and (max-width: 468px) {
+    .hero_main {
+        min-height: 60vh;
+        background-image: none;
+    }
+
+    .register {
+        padding: 1px auto;
+    }
+
+    .eo {
+        width: 20px;
+        padding-top: 1px;
+    }
+}
+
+@media screen and (min-width: 468px) and (max-width: 768px) {
+    .hero_main {
+        height: 91vh;
+        background-image: none;
+    }
+
+    .register {
+        padding: 1px auto;
+    }
+
+    .eo {
+        width: 25px;
+        padding-top: 1px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+    .hero_main {
+        height: 90vh;
+    }
+}
